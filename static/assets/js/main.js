@@ -151,8 +151,8 @@ if (location.pathname === '/') {
                 }, 1000);
             });
 
-            document.querySelector('.featured').src = '/assets/img/wide/stickman-archero-fight.png';
-        }).catch(e => new PolarisError('Failed to load featured game.'));
+           document.querySelector('.featured').src = '/assets/img/wide/stickman-archero-fight.png';
+// }).catch(e => new PolarisError('Failed to load featured game.'));
 
     const logHeight = () => {
         const log = document.createElement('div');
