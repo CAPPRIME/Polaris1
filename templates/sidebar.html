@@ -48,6 +48,12 @@
         <input class="settings-input" type="text" placeholder="eg: google.com" id="domain" />
     </div>
 
+    <h3>Proxy</h3>
+
+    <select id="proxy_select">
+        <option value="uv:bare">Ultraviolet</option>
+        <option value="uv:epoxy" selected>Ultraviolet (Epoxy)</option>
+    </select>
 
     <h3>Prevent close</h3>
 
@@ -56,7 +62,20 @@
         <span class="slider"></span>
     </div>
 
-   
+    <h3 style="margin-top: 0px;">Export/Import Data</h3>
+
+    <small id="export_error"></small>
+
+    <br>
+
+    <div>
+        <button class="settings-button nomargin" id="export">Export</button>
+        <button class="settings-button nomargin" id="import">Import</button>
+        <br>
+        <button class="settings-button nomargin" id="clear">Clear Data</button>
+    </div>
+
+    <br>
     <hr>
 
     <p>
