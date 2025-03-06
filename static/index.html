@@ -18,6 +18,33 @@
         <div class="container">
             <h1 class="nomargin">Hi</h1>
 
+    
+           <style>
+        .moving-text-container {  
+            text-align: center;
+            margin: 20px 0;      
+        }
+
+        .moving-text {
+            color: white; 
+            display: inline-block; 
+            animation: moveAndTilt 2s infinite alternate ease-in-out; 
+            font-size: 40px; 
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+        }
+
+        @keyframes moveAndTilt {
+            0% {
+                transform: translateX(-10px) rotate(-10deg); 
+            }
+            100% {
+                transform: translateX(10px) rotate(10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
     <div class="moving-text-container">  
         <div class="moving-text" id="random-text">Loading...</div>
     </div>
@@ -55,8 +82,6 @@
         
         window.onload = setRandomPhrase;
     </script>
-            
-
 
         </div>
 
