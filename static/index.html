@@ -16,9 +16,48 @@
 
     <div class="row mainpage">
         <div class="container">
-            <h1 class="nomargin">Featured Game</h1>
+            <h1 class="nomargin">Hi</h1>
 
-            <img class="featured" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="/>
+    <div class="moving-text-container">  
+        <div class="moving-text" id="random-text">Loading...</div>
+    </div>
+
+    <script>
+        const phrases = [
+            "Hewwo!",
+            "What Game Do You Want To Play",
+            "Welcome to the site!",
+            "Ads would give me more than $2500 dollars a year",
+            "Have a great day!",
+            "1.2k different kids go to this site every day",
+            "I Kind of Suck at Codeing",
+            "updated weekly!!!",
+            "ʕ•́ᴥ•̀ʔっ",
+            "New and Improved!",
+            "Hi Ben an ken",
+            "Ill fix the images later",
+            "I better not get iss for this",
+            "my homework ate my dog",
+            "I'm not the only one with 48178 hours on Brawl Stars",
+            "ヽ༼ ಠ益ಠ ༽ﾉ",
+            "downloading your passwords...",
+            "Since 2025! (Ya, thats like 2 months ago)",
+            "https://youtube.com/watch?v=dQw4w9WgXcQ",
+            "Dont fail your classes"
+        ];
+
+        function setRandomPhrase() {
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+            const randomPhrase = phrases[randomIndex];
+            document.getElementById('random-text').textContent = randomPhrase;
+        }
+
+        
+        window.onload = setRandomPhrase;
+    </script>
+            
+
+
         </div>
 
         <div class="container right">
